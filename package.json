@@ -1,0 +1,15 @@
+{
+  "name": "openhousingmarket.com",
+  "version": "0.0.0",
+  "description": "The main website for openhousingmarket.com",
+  "main": "index.js",
+  "author": "Richard Towers & Matthew Daniel",
+  "license": "AGPL-3.0",
+  "scripts": {
+     "test": "node tests.js"
+  },
+  "engines": {
+    "node": "7.3.0"
+  },
+  "private": true
+}

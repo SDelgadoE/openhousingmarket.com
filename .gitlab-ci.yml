@@ -1,0 +1,15 @@
+unit-tests:
+  stage: test
+  script:
+    - curl -sL https://deb.nodesource.com/setup_7.x | bash -
+    - apt-get install -y nodejs
+    - npm test
+
+heroku-deploy:
+  stage: deploy
+  script:
+    - apt-get update -qq
+    - apt-get install -yq ruby-dev
+    - gem install dpl
+    - dpl --provider=heroku --app=mysterious-ridge-55953 --api-key=$HEROKU_API_KEY
+
