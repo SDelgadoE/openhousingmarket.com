@@ -2,14 +2,24 @@
   "name": "openhousingmarket.com",
   "version": "0.0.0",
   "description": "The main website for openhousingmarket.com",
-  "main": "index.js",
+  "main": "src/main.js",
   "author": "Richard Towers & Matthew Daniel",
   "license": "AGPL-3.0",
   "scripts": {
-     "test": "node tests.js"
+    "test": "mocha spec",
+    "start": "node src/main.js"
   },
   "engines": {
     "node": "7.3.0"
   },
-  "private": true
+  "private": true,
+  "repository": "git@github.com:openhousingmarket/openhousingmarket.com.git",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.2.0"
+  }
 }
